@@ -5,9 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.18",
+    "@next/mdx": "^9.5.5",
+    "@types/webpack-env": "^1.15.3",
     "next": "9.5.5",
     "react": "16.14.0",
     "react-dom": "16.14.0"
