@@ -1,0 +1,17 @@
+import { Post } from '../components';
+
+export const meta = {
+  title: 'About me',
+  summary: 'Some descriptipn',
+  createdAt: '', // only for personal knowledge
+  updatedAt: 'Aug 04, 2020', // TODO: Replace with "now"
+  type: 'page', // note
+  // tags/topics
+  // stage: '', // evergreen, seedling, budding
+};
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>;
+
+# About something
+
+This is a text about something...

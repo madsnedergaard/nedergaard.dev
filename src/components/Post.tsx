@@ -1,13 +1,8 @@
 import Head from 'next/head';
 import { Container } from './Container';
+import type { PostMeta } from '../types';
 
-type Meta = {
-  title: string;
-  description: string;
-  date: string; // replace with date?
-  // TODO: Add more
-};
-export const Post: React.FC<{ meta: Meta }> = ({ children, meta }) => (
+export const Post: React.FC<{ meta: PostMeta }> = ({ children, meta }) => (
   <Container>
     <Head>
       <title>{meta.title}</title>
