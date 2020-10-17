@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { Container } from '../components';
 import posts from '../data/posts';
 
@@ -18,7 +19,7 @@ const Home = () => (
       {posts.map(({ slug, module }) => (
         <li key={slug}>
           {console.log(module)}
-          <a href={slug}>{module.meta.title}</a>
+          <Link href={slug}>{module.meta.title}</Link>
         </li>
       ))}
     </ul>
