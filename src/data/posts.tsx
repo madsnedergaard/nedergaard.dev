@@ -3,7 +3,7 @@ import type { PostMeta } from '../types';
 
 const importAll = (r) =>
   r.keys().map((fileName) => ({
-    slug: fileName.replace(/(^\.)(.*)(\.mdx?$)/, '$2'),
+    slug: fileName.replace(/(^\.)(.*)(\/index\.mdx?$)/, '$2'),
     module: r(fileName),
   }));
 
